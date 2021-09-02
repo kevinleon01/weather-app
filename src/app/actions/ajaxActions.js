@@ -10,7 +10,7 @@ export const fetchWeather = () => async (dispatch) => {
     const fetches = await Promise.all(
         Object.values(ids).map((e) =>
         fetch(
-            ``
+            `https://api.openweathermap.org/data/2.5/forecast?id=${e}&appid=e9bb569d7a1ad396a43801e4e0bc62ff`
         ).then((e) => e.json())
         )
     )

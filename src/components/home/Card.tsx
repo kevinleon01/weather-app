@@ -1,5 +1,5 @@
 import LeftComponent from "./LeftComponent";
-import { Link } from "react-router-dom";
+import  { Link }  from "react-router-dom";
 import React from "react";
 import { RiMapPinLine } from "react-icons/ri";
 import RightComponent from "./RightComponent";
