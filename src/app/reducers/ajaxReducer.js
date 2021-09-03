@@ -4,7 +4,7 @@ const initialState = {
     weather: {},
 }
 
-export default function (state = initialState, action) {
+export default function ajaxReducer (state = initialState, action) {
     switch (action.type) {
         case FETCH_WEATHER:
             return {
