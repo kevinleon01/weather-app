@@ -25,9 +25,9 @@ class City extends Component<FormProps, FormState> {
         super(props);
 
         if (
-            this.props.match.params.city !== "Munich" &&
-            this.props.match.params.city !== "London" &&
-            this.props.match.params.city !== "California"
+            this.props.match.params.city !== "Houston" &&
+            this.props.match.params.city !== "New York" &&
+            this.props.match.params.city !== "BuenosAires"
         ) {
             window.location.replace("/404");
             return;

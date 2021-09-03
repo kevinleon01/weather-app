@@ -4,6 +4,16 @@ import Card from '../components/home/Card'
 import { connect } from 'react-redux'
 import { fetchWeather } from '../app/actions/ajaxActions'
 
+import d_bg1 from '../assets/d_bg1.jpeg'
+import d_bg2 from '../assets/d_bg2.jpeg'
+import d_bg3 from '../assets/d_bg3.jpeg'
+import d_bg4 from '../assets/d_bg4.jpeg'
+import p_bg1 from '../assets/p_bg1.jpeg'
+import p_bg2 from '../assets/p_bg2.jpeg'
+import p_bg3 from '../assets/p_bg3.jpeg'
+import p_bg4 from '../assets/p_bg4.jpeg'
+
+
 interface FormProps {
     fetchWeather: Function;
     weather: Record<string, any>;
@@ -15,8 +25,21 @@ interface FormState {
 }
 
 class Home extends Component<FormProps, FormState> {
+    backgrounds: {[key: string]: any}
+
     constructor(props: any) {
         super(props);
+
+        this.backgrounds = {
+            d_bg1,
+            d_bg2,
+            d_bg3,
+            d_bg4,
+            p_bg1,
+            p_bg2,
+            p_bg3,
+            p_bg4,
+        }
 
         const randomInt = (min: number, max: number) =>
             Math.floor(Math.random() * (max - min)) + min;
@@ -29,9 +52,9 @@ class Home extends Component<FormProps, FormState> {
 
     setBg = (type: "default" | "click"): void => {
         if (type === "default") {
+            let imageKey = `${window.innerWidth < 768 ? "p" : "d"}_bg${this.state.random.toString()}` as string;
             this.setState({
-                imageSource: require(`../assets/${window.innerWidth < 768 ? "p" : "d"
-                    }_bg${this.state.random}.jpg`),
+                imageSource: this.backgrounds[imageKey] || 'p_bg2',
             })
         } else if (type === "click") {
             if (this.state.random === 4) {
