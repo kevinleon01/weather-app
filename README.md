@@ -1,44 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Weather App
 
-## Available Scripts
 
-In the project directory, you can run:
+### <a href="https://react-weather-kevin.netlify.app/> Link to website</a>
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### About
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+A simple weather application that pulls up current data for three cities: Houston, New York, Buenos Aires. It pulls information from the openweather api and displays it using React, Redux, Typescript, and Javascript.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Project Status
 
-### `npm run build`
+App should work indefinietly since there's no custom domain or hosting expense to keep up with. API allots suffieicnet calls on a per/month basis. 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Reflection
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- one week solo project
+- set out to build a simple weather app that displays the current weather info for a few cities
+- project served as a learning experience for a more complete react app
 
-### `npm run eject`
+-Unexepected Issues
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+While this app took more effort to build than initially expected, it was a good introduction and excerice in both typescript and tailwindcss. 
